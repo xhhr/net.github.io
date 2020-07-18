@@ -1,0 +1,23 @@
+<pre style='color:#1f1c1b;background-color:#ffffff;'>
+
+<span style='color:#898887;'># filename  myqr.py</span>
+<span style='color:#898887;'># brief     for QRcode picture.</span>
+<span style='color:#898887;'># author    xhhr</span>
+<span style='color:#898887;'># date      07/17/2020</span>
+
+
+<span style='color:#ff5500;'>import</span> os
+<span style='color:#ff5500;'>from</span> MyQR <span style='color:#ff5500;'>import</span> myqr
+
+myqr.run(
+    words       = <span style='color:#bf0303;'>'hi!!'</span>,
+    version     = <span style='color:#b08000;'>6</span>,
+    level       = <span style='color:#bf0303;'>'H'</span>,
+    picture     = <span style='color:#bf0303;'>'pic.png'</span>,
+    colorized   = <span style='color:#0057ae;'>True</span>,
+    brightness  = <span style='color:#b08000;'>1.0</span>,
+    save_name   = <span style='color:#bf0303;'>'myqr.png'</span>
+    
+)
+
+</pre>

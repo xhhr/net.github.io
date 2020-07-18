@@ -1,0 +1,32 @@
+<pre style='color:#1f1c1b;background-color:#ffffff;'>
+
+
+    # filename: archlinux_installation.txt
+    # brief: my notes for archlinux install
+    # author: xhhr
+    # date: 07/17/2020
+
+
+    ---- switch keyboard layout ----
+    qwerty to dvorad: nraet.fo ekrpat
+
+
+    ---- system install ----
+    vim /etc/pacman.d/mirrorlist    # dgut.edu.cn
+    pacstrap /mnt base base-devel linux linux-firmware vim networkmanager dhcpcd
+
+
+    ---- boot loader install ----
+    pacman -S grub efibootmgr
+    grub-install --efi-directory=/efi  --bootloader-id=Linux
+    grub-mkconfig -o /boot/grub/grub.cfg
+
+
+    ---- desktop environment install ----
+    pacman -S xorg plasma plasma-applications  xf86-video-intel xf86-video-noureau
+
+
+    ---- software ----
+    pacman -S virtualbox linux-headers screenfetch metasploit latte-dock
+    vboxreload
+</pre>
